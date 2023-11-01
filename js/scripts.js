@@ -8,4 +8,10 @@ window.onload = function () {
         document.querySelector("div#story").removeAttribute("class");
         event.preventDefault();
     }
+
+    let click = document.querySelector("form>button");
+    click.onclick = function () {
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+    }
 }
