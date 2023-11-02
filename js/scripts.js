@@ -1,3 +1,4 @@
+
 window.onload = function () {
     let form = document.querySelector("form");
     form.onsubmit = function (letter) {
@@ -11,8 +12,13 @@ window.onload = function () {
     }
 
     let click = document.querySelector("form>button");
-    click.onclick = function () {
-        document.body.style.backgroundColor = "black";
-        document.body.style.color = "white";
+
+    function alertHeadings() {
+        document.body.style.backgroundColor = "azure";
+        document.body.style.color = "black";
     }
+
+    click.addEventListener("click", alertHeadings);
+
+
 }
