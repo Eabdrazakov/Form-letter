@@ -20,5 +20,5 @@ window.onload = function () {
 
     click.addEventListener("click", alertHeadings);
 
-
+    click.removeEventListener("click", alertHeadings);
 }
